@@ -17,7 +17,7 @@ module.exports = async function (deployer, network) {
 
   const exchangeV2 = await deployProxy(
     ExchangeV2,
-    [transferProxy, erc20TransferProxy, 500, communityWallet, royaltiesRegistry],
+    [transferProxy, erc20TransferProxy, protocolFeeinBp, communityWallet, royaltiesRegistry],
     { deployer, initializer: '__ExchangeV2_init' }
   );
   console.log("deployed exchangeV2 at", exchangeV2.address)

@@ -68,6 +68,12 @@ const def = {
   address_ownerTestCryptoPunks: "0xf17f52151EbEF6C7334FAD080c5704D77216b732",
 }
 
+const rinkeby_stakes = {
+  communityWallet: "0x1775373fc7B68A9B57fDd70BBAad1CE5576d3E08",
+  deploy_CryptoPunks: false,
+  address_CryptoPunks: "0x0000000000000000000000000000000000000000",
+}
+
 let settings = {
   "default": def,
   "rinkeby": rinkeby,
