@@ -32,8 +32,8 @@ function createNetwork(name) {
       gas: 6000000,
       gasPrice: gasPrice + "000000000",
       network_id: json.network_id,
-      skipDryRun: true,
-      networkCheckTimeout: 500000
+      // skipDryRun: true,
+      // networkCheckTimeout: 500000
     };
   } catch (e) {
     return null;
@@ -56,15 +56,15 @@ module.exports = {
   ],
 
   networks: {
-    e2e: createNetwork("e2e"),
-    ops: createNetwork("ops"),
-    ropsten: createNetwork("ropsten"),
-    mainnet: createNetwork("mainnet"),
-    rinkeby: createNetwork("rinkeby"),
-    rinkeby2: createNetwork("rinkeby2"),
-    rinkeby_stakes: createNetwork("rinkeby_stakes"),
-    polygon_mumbai: createNetwork("polygon_mumbai"),
-    polygon_mainnet: createNetwork("polygon_mainnet")
+    // e2e: createNetwork("e2e"),
+    // ops: createNetwork("ops"),
+    // ropsten: createNetwork("ropsten"),
+    // mainnet: createNetwork("mainnet"),
+    // rinkeby: createNetwork("rinkeby"),
+    // rinkeby2: createNetwork("rinkeby2"),
+    rinkeby_stakes: createNetwork("rinkeby_stakes")
+    // polygon_mumbai: createNetwork("polygon_mumbai"),
+    // polygon_mainnet: createNetwork("polygon_mainnet")
   },
 
   compilers: {

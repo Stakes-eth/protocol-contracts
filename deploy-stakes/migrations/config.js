@@ -75,17 +75,17 @@ const rinkeby_stakes = {
 }
 
 let settings = {
-  "default": def,
-  "rinkeby": rinkeby,
-  "rinkeby-fork": rinkeby,
-  "ropsten": ropsten,
-  "ropsten-fork": ropsten,
-  "mainnet": mainnet,
-  "mainnet-fork": mainnet,
-  "e2e": e2e,
-  "e2e-fork": e2e,
-  "polygon_mumbai": polygon_mumbai,
-  "polygon_mainnet": polygon_mainnet,
+  // "default": def,
+  // "rinkeby": rinkeby,
+  // "rinkeby-fork": rinkeby,
+  // "ropsten": ropsten,
+  // "ropsten-fork": ropsten,
+  // "mainnet": mainnet,
+  // "mainnet-fork": mainnet,
+  // "e2e": e2e,
+  // "e2e-fork": e2e,
+  // "polygon_mumbai": polygon_mumbai,
+  // "polygon_mainnet": polygon_mainnet,
   "rinkeby_stakes": rinkeby_stakes
 };
 
