@@ -1,5 +1,5 @@
 const os = require('os');
-const stakesDir = "/rarible/protocol-contracts"
+const stakesDir = "/unlock-stakes/rarible/protocol-contracts"
 
 let apiKey;
 try {
