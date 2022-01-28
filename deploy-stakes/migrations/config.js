@@ -85,7 +85,8 @@ let settings = {
   "e2e": e2e,
   "e2e-fork": e2e,
   "polygon_mumbai": polygon_mumbai,
-  "polygon_mainnet": polygon_mainnet
+  "polygon_mainnet": polygon_mainnet,
+  "rinkeby_stakes": rinkeby_stakes
 };
 
 function getSettings(network) {
