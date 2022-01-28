@@ -86,7 +86,8 @@ let settings = {
   // "e2e-fork": e2e,
   // "polygon_mumbai": polygon_mumbai,
   // "polygon_mainnet": polygon_mainnet,
-  "rinkeby_stakes": rinkeby_stakes
+  "rinkeby_stakes": rinkeby_stakes,
+  "rinkeby_stakes-fork": rinkeby_stakes // This "network" is created if you enable dry-runs in `truffle-config.js` (on by default)
 };
 
 function getSettings(network) {
