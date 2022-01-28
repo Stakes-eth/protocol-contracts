@@ -1,9 +1,10 @@
 const os = require('os');
+const stakesDir = "/rarible/protocol-contracts"
 
 let apiKey;
 try {
-	console.log(`Loading etherscan key from ${os.homedir() + "/.ethereum/etherscan.json"}`);
-	apiKey = require(os.homedir() + "/.ethereum/etherscan.json").apiKey;
+	console.log(`Loading etherscan key from ${os.homedir() + stakesDir + "/.ethereum/etherscan.json"}`);
+	apiKey = require(os.homedir() + stakesDir + "/.ethereum/etherscan.json").apiKey;
 	console.log("loaded etherscan api key");
 } catch {
 	console.log("unable to load etherscan key from config")
@@ -12,7 +13,7 @@ try {
 
 function createNetwork(name) {
   try {
-    var json = require(os.homedir() + "/.ethereum/" + name + ".json");
+    var json = require(os.homedir() + stakesDir + "/.ethereum/" + name + ".json");
     var gasPrice = json.gasPrice != null ? json.gasPrice : 2000000000;
 
     return {
