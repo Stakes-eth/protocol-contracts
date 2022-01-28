@@ -8,6 +8,7 @@ const ERC20TransferProxy = artifacts.require('ERC20TransferProxy');
 const TransferProxy = artifacts.require('TransferProxy');
 
 module.exports = async function (deployer, network) {
+  console.log("ExV2: ", network);
   const { communityWallet } = getSettings(network);
 
   const transferProxy = (await TransferProxy.deployed()).address;
