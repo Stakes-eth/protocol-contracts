@@ -14,7 +14,7 @@ module.exports = async function (deployer, network) {
   const transferProxy = (await TransferProxy.deployed()).address;
   const erc20TransferProxy = (await ERC20TransferProxy.deployed()).address;
   const royaltiesRegistry = (await RoyaltiesRegistry.deployed()).address;
-  const protocolFeeinBp = 500; //Protocol Fee in Basis points. 500 = 5%
+  const protocolFeeinBp = 0; //THIS NEEDS TO BE 0
 
   const exchangeV2 = await deployProxy(
     ExchangeV2,
