@@ -14,7 +14,7 @@ module.exports = async function (deployer, network) {
   const transferProxy = (await TransferProxy.deployed()).address;
   const erc20TransferProxy = (await ERC20TransferProxy.deployed()).address;
   const royaltiesRegistry = (await RoyaltiesRegistry.deployed()).address;
-  const protocolFeeinBp = 0; //THIS NEEDS TO BE 0
+  const protocolFeeinBp = 500; //THIS NEEDS TO MATCH THE "fees" VARIABLE IN THE SDK CONFIG
 
   const exchangeV2 = await deployProxy(
     ExchangeV2,
